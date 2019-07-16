@@ -1,0 +1,15 @@
+
+<div style="text-align:center">
+    <h1>Films <pre style="margin:3px;"></pre>
+        <a (click)="backClicked()"> << </a>
+    </h1>   
+    
+    
+    <ul>
+         <li *ngFor="let f of films; let i=index;">
+            <a routerLink="/films">
+              <span class="badge">{{i+1}}</span> {{f.title}}
+            </a> 
+      </ul>
+      
+    </div> 

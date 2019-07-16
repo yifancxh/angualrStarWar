@@ -1,0 +1,19 @@
+<div style="text-align:center">
+    <h1>People <pre style="margin:3px;"></pre>
+        <a (click)="backClicked()"> << </a>
+    </h1>   
+    
+    
+    <ul>
+        <!-- <li *ngFor="let people of people | keyvalue">
+          <h2>
+            {{ people.key }}
+          </h2>
+        </li> -->
+         <li *ngFor="let p of people; let i=index;" (click)="onSelect(people)">
+            <a routerLink="/people">
+              <span class="badge" routerLink={{people.id}} routerLinkActive="active">{{i+1}}</span> {{p.name}}
+            </a> 
+      </ul>
+      
+    </div> 
