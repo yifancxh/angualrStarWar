@@ -10,9 +10,9 @@
             {{ people.key }}
           </h2>
         </li> -->
-         <li *ngFor="let p of people; let i=index;" (click)="onSelect(people)">
+         <li *ngFor="let p of people; let i=index;">
             <a routerLink="/people">
-              <span class="badge" routerLink={{people.id}} routerLinkActive="active">{{i+1}}</span> {{p.name}}
+              <span class="badge">{{i+1}}</span> {{p.name}}
             </a> 
       </ul>
       

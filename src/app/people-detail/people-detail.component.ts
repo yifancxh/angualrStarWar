@@ -12,10 +12,10 @@ export class PeopleDetailComponent implements OnInit {
     constructor(private service: ApiService, private _location:Location) { }
 
   ngOnInit() {
-    this.peopleDetail=[];
-    this.service.readPeople(1).subscribe((data:{}) => {
-      this.peopleDetail = data;
-    });
+    // this.peopleDetail=[];
+    // this.service.readPeople(1).subscribe((data:{}) => {
+    //   this.peopleDetail = data;
+    // });
   }
   backClicked() {
     this._location.back();
